@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201608012049375_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201608012049375_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608040246271_AddNamePropertyToMemberShipTypes.cs" />
+    <Compile Include="Migrations\201608040246271_AddNamePropertyToMemberShipTypes.Designer.cs">
+      <DependentUpon>201608040246271_AddNamePropertyToMemberShipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -220,7 +224,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -287,6 +293,9 @@
     <EmbeddedResource Include="Migrations\201608012049375_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201608012049375_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608040246271_AddNamePropertyToMemberShipTypes.resx">
+      <DependentUpon>201608040246271_AddNamePropertyToMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -302,7 +311,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49333</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
